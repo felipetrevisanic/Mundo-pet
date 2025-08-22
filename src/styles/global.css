@@ -104,6 +104,14 @@ body{
     }
 }
 
+.button {
+    background-color: var(--content-brand);
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    font: var(--label-lg);
+}
+
 @media (width <= 80rem) {
     
 }
