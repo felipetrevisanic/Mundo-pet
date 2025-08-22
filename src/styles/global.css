@@ -60,11 +60,48 @@ body{
     }
 }
 
-
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
   background: url("../assets/Icon.svg") no-repeat; 
   font: var(--label-lg);
+}
+
+.card {
+    background-color: var(--bg-tertiary);
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    border: none;
+    
+
+
+
+    & header {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding:  0.75rem 1.25rem;
+
+        
+        & h2{
+            font: var(--label-lg);
+            color: var(--content-primary);
+        }
+
+        & p {
+            font: var(--label-lg);
+            color: var(--content-secondary);
+            margin-left: auto;
+        }
+    }
+
+    & .divisor{
+        border: 1px solid var(--border-divisor);
+    }
+
+    & .schedules{
+        padding: 1.25rem;
+    }
 }
 
 @media (width <= 80rem) {
