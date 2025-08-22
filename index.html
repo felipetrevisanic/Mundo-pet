@@ -9,12 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    
     <div class="logo">
         <img src="src/assets/logo.svg" alt="">
     </div>
 
+    <main>
+        <header class="flex flex-center gap-1">
+            <div>
+                <p class="title">Sua agenda</p>
+                <p class="p-md">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+            </div>
+            <div class="calendar">
+                <i><img src="src/assets/calendar.svg" alt="calendario"></i>
+                <input type="date" name="date" id="date" class="input-date">    
+            </div>
+        </header>
+
+    </main>
+    
     <!-- <div class="overlay">
          
         <div class="modal">
@@ -86,12 +101,7 @@
         </div>
     </div> -->
 
-    <!--
-    Calendario
-    <div class="calendar">
-        <i><img src="src/assets/calendar.svg" alt="calendario"></i>
-        <input type="date" name="date" id="date" class="input-date">    
-    </div>
-     -->
+    
+    
 </body>
 </html>

@@ -33,6 +33,27 @@ body{
     margin: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-0\.5{
+    gap: .5rem;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
 .logo {
     position: absolute;
     top: 0px;
@@ -43,14 +64,24 @@ body{
     background-color: var(--border-primary);
 }
 
+main {
+    padding: 5rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
 .title {
     font: var(--title);
     color: var(--content-primary);
+    margin: 0;
 }
 
 .p-md {
     font: var(--p-md);
     color: var(--content-secondary);
+    margin: 0;
 }
 
 .calendar{
