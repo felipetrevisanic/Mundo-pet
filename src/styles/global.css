@@ -18,11 +18,55 @@
     --accent-yellow-light: #756E1B;
     --accent-orange: #F09102;
     --accent-orange-light: #75501B;
-    --title: bold 1.5rem/2rem  'Inter Tight';
-    --p-md: medium .875rem/1.5rem 'Inter';
-    --p-sm: medium .75rem/1rem 'Inter';
-    --label-lg: bold 1rem/1.5rem  'Inter';
-    --label-md: bold .875rem/1.5rem 'Inter';
-    --label-sm: bold .75rem/1rem 'Inter';
-    --link: medium .75rem/1rem 'Inter';
+    --title: 700 1.5rem/2rem  'Inter Tight';
+    --p-md: 500 .875rem/1.5rem 'Inter';
+    --p-sm: 500 .75rem/1rem 'Inter';
+    --label-lg: 700 1rem/1.5rem  'Inter';
+    --label-md: 700 .875rem/1.5rem 'Inter';
+    --label-sm: 700 .75rem/1rem 'Inter';
+    --link: 500 .75rem/1rem 'Inter';
+}
+
+body{
+    background-color: #14151D;
+}
+
+.title {
+    font: var(--title);
+    color: var(--content-primary);
+}
+
+.p-md {
+    font: var(--p-md);
+    color: var(--content-secondary);
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid var(--border-primary);
+    border-radius: .5rem;
+    padding: .375rem;
+
+    & .input-date {
+        border: none;
+        background-color: transparent;
+        color: var(--content-secondary);   
+        outline: none;
+        font: var(--p-md);
+        
+    }
+}
+
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url("../assets/Icon.svg") no-repeat; 
+  font: var(--label-lg);
+}
+
+@media (width <= 80rem) {
+    
 }
