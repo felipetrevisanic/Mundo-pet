@@ -29,6 +29,8 @@
 
 body{
     background-color: #14151D;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
@@ -112,6 +114,6 @@ body{
     font: var(--label-lg);
 }
 
-@media (width <= 80rem) {
+@media (width < 80rem) {
     
 }
