@@ -154,6 +154,7 @@ header {
     border: none;
     border-radius: .5rem;
     font: var(--label-lg);
+    cursor: pointer;
 }
 
 & .button-container{
