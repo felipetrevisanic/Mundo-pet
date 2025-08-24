@@ -115,6 +115,7 @@ header {
     flex-direction: column;
     border-radius: .5rem;
     border: none;
+    margin-bottom: .75rem;
     
 
 
@@ -154,6 +155,12 @@ header {
     border-radius: .5rem;
     font: var(--label-lg);
 }
+
+& .button-container{
+            margin-top: .5rem;
+            display: flex;
+            justify-content: end;
+        }
 
 @media (width < 80rem) {
     
