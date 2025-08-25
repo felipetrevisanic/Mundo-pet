@@ -36,7 +36,7 @@
                     <p>09h-12h</p>
                 </header>
                 <div class="divisor"></div>
-                <div class="schedules">
+                <div class="schedules" id="period-morning">
 
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <p>13h-18h</p>
                 </header>
                 <div class="divisor"></div>
-                <div class="schedules">
+                <div class="schedules" id="period-afternoon">
 
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <p>19h-21h</p>
                 </header>
                 <div class="divisor"></div>
-                <div class="schedules">
+                <div class="schedules" id="period-night">
 
                 </div>
             </div>
@@ -82,45 +82,45 @@
                     <label for="name">Nome do tutor</label>
                     <div class="input-form">
                         <i><img src="src/assets/user.svg" alt="usuario"></i>
-                        <input type="text" placeholder="Digite o seu nome" id="name">
+                        <input type="text" placeholder="Digite o seu nome" id="name" name="name" required>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="pet">Nome do pet</label>
                     <div class="input-form">
                         <i><img src="src/assets/pet.svg" alt="usuario"></i>
-                        <input type="text" placeholder="Digite o nome do seu pet" id="pet">
+                        <input type="text" placeholder="Digite o nome do seu pet" id="pet" name="pet" required>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="phone">Telefone</label>
                     <div class="input-form">
                         <i><img src="src/assets/phone.svg" alt="usuario"></i>
-                        <input type="phone" placeholder="Digite o seu número de contato" id="phone">
+                        <input type="phone" placeholder="Digite o seu número de contato" id="phone" name="phone" required>
                     </div>
                 </div>
                     <div class="input-container">
                     <label for="service">Descrição do serviço</label>
-                    <textarea class="input-form" type="text" placeholder="Digite o serviço que será realizado" id="service" rows="2"></textarea>
+                    <textarea class="input-form" type="text" placeholder="Digite o serviço que será realizado" id="service" name="service" rows="2" required></textarea>
                 </div>
                 <div class="half">
                     <div class="input-container">
                         <label for="schedule-date">Data</label>
                         <div class="input-form calendar">
                             <i><img src="src/assets/calendar.svg" alt="calendario"></i>
-                            <input type="date" name="schedule-date" id="schedule-date" class="input-date">    
+                            <input type="date" name="schedule-date" id="schedule-date" class="input-date" required>    
                         </div>
                     </div>
                     <div class="input-container">
                         <label for="schedule-time">Hora</label>
                         <div class="input-form">
                             <i><img src="src/assets/clock.svg" alt="usuario"></i>
-                            <input type="time" name="schedule-time" id="schedule-time">
+                            <input type="time" name="schedule-time" id="schedule-time" required>
                         </div>
                     </div>
                 </div>
                 <div class="button-container">
-                    <input type="submit" value="AGENDAR" class="button">
+                    <input type="submit" value="AGENDAR" class="button" id="btn-new-schedule">
                 </div>
             </form>
         

@@ -3,9 +3,9 @@ import { apiConfig } from './api-config.js'
 export async function scheduleNew({ id, name, pet, phone, service, data, time }) {
     try {
         await fetch(`${apiConfig.baseUrl}/schedules`, {
-            method: postMessage,
+            method: 'POST',
             headers: {
-                "ContentType": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({ id, name, pet, phone, service, data, time })
         })
